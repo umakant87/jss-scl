@@ -75,6 +75,9 @@ placeholders:
     - componentName: HeroComposite
       fields:
         heading: Welcome to Sitecore JSS
+    - componentName: HeroCarousel
+      fields:
+        heading: Welcome to Sitecore JSS
     - componentName: TileCard
       fields:
         heading: Welcome to Sitecore JSS

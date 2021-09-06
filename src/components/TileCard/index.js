@@ -6,7 +6,7 @@ const TileCard = (props) => {
   const tiles = props?.fields.Tiles;
   return (
     <div className="TileCard d-flex col-md-12">
-      {tiles.map((tile, index) => {
+      {/* {tiles.map((tile, index) => {
         console.log(tile);
         return (
           <div key={index} className={'children col-md-4'}>
@@ -18,7 +18,7 @@ const TileCard = (props) => {
             </div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };
