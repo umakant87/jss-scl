@@ -1,0 +1,54 @@
+@import '../../assets//common.scss';
+
+.c-hero-composite {
+    position: relative;
+    margin-top: 20px;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width: 900px) {
+            flex-direction: column;
+            
+        }
+        &--normal {
+            flex-direction: row;
+            @media only screen and (max-width: 900px) {
+                flex-direction: column;
+            }
+        }
+        &--reverse {
+            flex-direction: row-reverse;
+            @media only screen and (max-width: 900px) {
+                flex-direction: column-reverse;
+            }
+        }
+        
+        &__image {
+            flex-basis: 48%;
+            height: auto;
+        }
+        &__content {
+            flex-basis: 48%;
+            &__title {
+               
+                    font-weight: 600;
+            }
+            &__cta {
+                margin-top: $space4;
+            }
+        }
+        
+        
+    }
+}
+.c-hero-composite__container--reverse {
+    .c-hero-composite__container__content {
+        margin-right: 4%;
+    }
+}
+
+.c-hero-composite__container--normal {
+    .c-hero-composite__container__content {
+        margin-left: 4%;
+    }
+}

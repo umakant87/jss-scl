@@ -1,0 +1,31 @@
+@import '../../assets//common.scss';
+.c-button {
+    font-weight: 700;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+  }
+  .c-button__primary {
+    color: $white;
+    background-color: $button-primary-color;
+  }
+  .c-button__secondary {
+    color: #333;
+    background-color: transparent;
+    box-shadow: $black 0px 0px 0px 1px inset;
+  }
+  .c-button__small {
+    font-size: $font-small;
+    padding: $space2 $space3;
+  }
+  .c-button__medium {
+    font-size: $font-medium;
+    padding: $space2 $space3;
+  }
+  .c-button__large {
+    font-size: $p-font-size-small;
+    padding: $space2 $space4;
+  }
+  

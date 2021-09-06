@@ -1,0 +1,23 @@
+@import '../../assets//common.scss';
+.TileCard {
+    font-size: $font-medium;
+    justify-content: center;
+    .children {
+      padding: $space4;
+      flex-direction: column;
+      text-align: center;
+      &:hover {
+        box-shadow: 0 10px 10px $grey-light;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+      }
+      .title {
+        font-weight: 600;
+        padding-top: $space4;
+      }
+    }
+  }
+  

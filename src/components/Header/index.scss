@@ -1,0 +1,25 @@
+@import '../../assets//common.scss';
+.c-header {
+    &__container-fluid {
+      &__navbar-brand {
+        width: 100px;
+        height: auto;
+        img {
+          background: $white;
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      &__menu {
+          &__form {
+              .c-form-input  {
+                  margin: 0 0.5rem 0 0 !important;
+                  input {
+                      padding: $fcPadding !important;
+                  }
+              }
+          }
+      }
+    }
+  }
+  
