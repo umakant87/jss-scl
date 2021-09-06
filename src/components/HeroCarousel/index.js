@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 const HeroCarousel = (props) => {
-  const slides = props?.Slider;
-  const showCaption = props?.showCaption?.value;
-  const captionAlignment = props?.cationAlignment?.value;
+  const slides = props?.fields?.Slider;
+  const showCaption = props?.fields?.showCaption?.value;
+  const captionAlignment = props?.fields?.cationAlignment?.value;
 
   const [currSlide, setCurrSlide] = useState(1);
   /**
