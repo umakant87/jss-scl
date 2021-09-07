@@ -13,12 +13,12 @@ const Footer = (props) => {
   const links = props?.fields?.Links;
   const SocialAccountHeading = props?.fields?.SocialAccountHeading;
   const SocialAccounts = props?.fields?.SocialAccount;
-  // const convertedSocial = SocialAccounts.map((social) => ({
-  //   label: social.displayName,
-  //   service: social.fields.service.value,
-  //   url: social.fields.URL.value.href,
-  // }));
-  // console.log(convertedSocial);
+  const convertedSocial = SocialAccounts.map((social) => ({
+    label: social.displayName,
+    service: social.fields.service.value,
+    url: social.fields.URL.value.href,
+  }));
+  console.log(convertedSocial);
   return (
     <div className="c-footer-address">
       <div className="c-footer-address__container">
