@@ -60,7 +60,7 @@ const Footer = (props) => {
           <h2>
             <Text tag="p" field={SocialAccountHeading} />
           </h2>
-          {/* <SocialAccount socialmenus={convertedSocial} /> */}
+          <SocialAccount socialmenus={convertedSocial} />
         </div>
       </div>
       <div className="c-footer-address__copyright">
