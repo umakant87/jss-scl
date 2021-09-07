@@ -40,7 +40,7 @@ const fields = {
               ClassName: {
                 value: 'Primary',
               },
-              Slider: [
+              Slides: [
                 {
                   id: '1d4feaf7-b270-48ed-a855-16f0dcb8859f',
                   url: 'http://13bd-122-179-74-128.ngrok.io/Data/Hero-Carousel/Slides/slide1',

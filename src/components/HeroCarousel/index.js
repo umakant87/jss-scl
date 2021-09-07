@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './index.scss';
+import fields from './mockFields';
 import { Image } from '@sitecore-jss/sitecore-jss-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 const HeroCarousel = (props) => {
-  const slides = props?.fields?.Slider;
+  console.log('Props', props);
+  const slides = props?.fields?.Slides;
   const showCaption = props?.fields?.showCaption?.value;
   const captionAlignment = props?.fields?.cationAlignment?.value;
 
@@ -50,7 +52,7 @@ const HeroCarousel = (props) => {
               <div className={'c-slidecontainer__slider__slide__number'}>
                 {currSlide} {'/'} {slides.length}
               </div>
-              <Image media={slide} />
+              <Image media={slide.fields.Image} />
               {showCaption && (
                 <div
                   className={[
@@ -58,14 +60,14 @@ const HeroCarousel = (props) => {
                     `text-${captionAlignment}`,
                   ].join(' ')}
                 >
-                  {slide.text}
+                  {slide.fields.Title.value}
                 </div>
               )}
             </div>
           );
         })}
         <div
-          className={['c-slidecontainer__slider__prevnext', 'd-flex justify-content-between'].join(
+          className={['c-slidecontainer__slider__prevnext ', 'd-flex justify-content-between'].join(
             ''
           )}
         >
