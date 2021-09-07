@@ -78,7 +78,6 @@ placeholders:
     - componentName: TileCard
       fields:
         heading: Welcome to Sitecore JSS
-
   jss-footer:
     - componentName: Footer
       fields:
