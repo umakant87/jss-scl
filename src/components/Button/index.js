@@ -14,6 +14,7 @@ export const Button = (props) => {
       className={['c-button', `c-button__${size}`, `c-button__${className}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...(callToAction && { onClick: () => CTA(callToAction) })}
+      onClick={onClick}
     >
       {label}
     </button>
