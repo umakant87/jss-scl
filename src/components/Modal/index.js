@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { Button } from '../Button/index';
 import './index.scss';
-import fields from './mockFields';
-
-const title = fields?.sitecore?.route?.placeholders['jss-header']?.[0]?.fields?.Title.value;
-const description =
-  fields?.sitecore?.route?.placeholders['jss-header']?.[0]?.fields?.Description.value;
 
 const Modal = (props) => {
+  const title = props?.fields?.Title.value;
+  const description = props?.fields?.Description.value;
   const [toggleModal, setToggleModal] = useState('hide');
 
   const openModal = () => {
-    console.log('Show');
     setToggleModal('show');
   };
   const closeModal = () => {

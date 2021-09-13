@@ -1,0 +1,11 @@
+@import '../../assets/common.scss';
+.c-page-header {
+  display: flex;
+  padding: $space3 $space4;
+  align-items: center;
+  border-bottom: solid $black 1px;
+
+  .pageheader-h1 {
+    font-size: $h1-font-size-small;
+  }
+}

@@ -9,6 +9,9 @@ const HeroComposite = (props) => {
   const description = props?.fields?.Description;
   const cta = props?.fields?.Cta;
   const orientation = props?.fields?.Orientation?.value;
+  const readMore = (link) => {
+    window.open(link, '_blank');
+  };
   return (
     <div className="c-hero-composite">
       <div
@@ -34,7 +37,7 @@ const HeroComposite = (props) => {
                 type="button"
                 size="medium"
                 label={cta.value.text}
-                callToAction={cta.value.url}
+                onClick={() => readMore(cta.value.url)}
               />
             </div>
           )}

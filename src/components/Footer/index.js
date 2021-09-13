@@ -18,7 +18,6 @@ const Footer = (props) => {
     service: social.fields.service.value,
     url: social.fields.URL.value.href,
   }));
-  console.log(convertedSocial);
   return (
     <div className="c-footer-address">
       <div className="c-footer-address__container">

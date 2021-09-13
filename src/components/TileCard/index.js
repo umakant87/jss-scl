@@ -7,7 +7,6 @@ const TileCard = (props) => {
   return (
     <div className="TileCard d-flex col-md-12">
       {tiles.map((tile, index) => {
-        console.log(tile);
         return (
           <div key={index} className={'children col-md-4'}>
             <div>

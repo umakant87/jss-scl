@@ -16,7 +16,7 @@ const SocialAccount = (props) => {
   const getIcon = (icon) => {
     if (icon === 'Facebook') {
       return <FontAwesomeIcon className="c-social-account__list__item__icon" icon={faFacebook} />;
-    } else if (icon === 'twitter') {
+    } else if (icon === 'Twitter') {
       return <FontAwesomeIcon className="c-social-account__list__item__icon" icon={faTwitter} />;
     } else if (icon === 'Instagram') {
       return <FontAwesomeIcon className="c-social-account__list__item__icon" icon={faInstagram} />;
