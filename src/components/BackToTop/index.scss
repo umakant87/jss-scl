@@ -1,0 +1,12 @@
+@import '../../assets/common.scss';
+.c-backtotop {
+  &__icon {
+    font-size: 32px;
+    color: $black;
+    position: fixed;
+    right: 1%;
+    cursor: pointer;
+    z-index: 1;
+    bottom: 20px;
+  }
+}
