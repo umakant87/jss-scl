@@ -1,0 +1,39 @@
+@import '../../assets/common.scss';
+.c-tag {
+  position: relative;
+	width: 150px;
+	display: flex;
+  a {
+    background: $white;
+    display: inline-block;
+    line-height: 1.666em;
+    white-space: normal;
+    font-size: $font-small;
+    color: $grey-dark;
+    padding: $space1 $space2;
+    margin: 0 5px 2px 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  span {
+    text-decoration: none;
+    background: $white;
+    display: inline-block;
+    line-height: 1.666em;
+    white-space: normal;
+    font-size: $font-small;
+    color: $grey-dark;
+    padding: $space1 $space2;
+    margin: 0 5px 2px 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
