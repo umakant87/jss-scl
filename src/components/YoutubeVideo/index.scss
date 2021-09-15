@@ -1,0 +1,41 @@
+@import '../../assets/common.scss';
+.c-video {
+  &__content_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background-color: $grey-light;
+    border-radius: 5px;
+    padding: $space2;
+  }
+  &__content {
+    background-color: $white;
+  }
+  &__thumbnail {
+    width: 320px;
+  }
+  &__playicon {
+    font-size: $icon-font-size-medium;
+    position: relative;
+    right: 19%;
+    color: $red;
+    cursor: pointer;
+    background-color: $grey-light;
+    width: 50px !important;
+    padding: $space1;
+    border-radius: 5px;
+  }
+}
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.c-button__close {
+  margin: 0.5em;
+}

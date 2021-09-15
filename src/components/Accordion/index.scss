@@ -1,0 +1,23 @@
+@import '../../assets/common.scss';
+.c-accordion {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  &__item {
+    &__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+      background-color: $blue;
+      padding: $space3;
+      &:hover {
+        background-color: $blue-hover;
+      }
+    }
+    &__content {
+      background-color: $blue;
+      padding: $space3;
+    }
+  }
+}
