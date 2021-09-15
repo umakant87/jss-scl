@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
-import fields from './mockFields';
 
 const SocialShare = (props) => {
   const sourceUrl = props.fields?.Url?.value;

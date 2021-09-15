@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './index.scss';
-import fields from './mockFields';
 import { Image } from '@sitecore-jss/sitecore-jss-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
