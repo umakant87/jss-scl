@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image } from '@sitecore-jss/sitecore-jss-react';
+import { Text, Image, RichText } from '@sitecore-jss/sitecore-jss-react';
 import './index.scss';
 
 const HeroBanner = (props) => {
@@ -23,7 +23,7 @@ const HeroBanner = (props) => {
             <Text type="h1" field={title} />
           </div>
           <div className="c-hero-banner__container__content__description">
-            <Text type="p" field={description} />
+            <RichText type="p" field={description} />
           </div>
         </div>
       </div>

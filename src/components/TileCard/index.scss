@@ -2,6 +2,11 @@
 .TileCard {
     font-size: $font-medium;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
     .children {
       padding: $space4;
       flex-direction: column;
