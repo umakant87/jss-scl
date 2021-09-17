@@ -1,0 +1,45 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import '../../assets/common.scss';
+
+.c-quote {
+  padding: $space4;
+  background-color: $grey-light;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: $h1-font-size-xsmall;
+    margin-bottom: 15px;
+  }
+  &__description {
+    font-size: $icon-font-size-xsmall;
+    display: inline-flex;
+    padding: $space5 $space5 0 $space5;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f10d";
+      position: absolute;
+      left: 40px;
+      top: 70px;
+      font-size: $icon-font-size-small;
+      color: $purple;
+    }
+  }
+  &__name{
+      display: flex;
+      justify-content: flex-end;
+      font-style: italic;
+      margin-right: 55px;
+  }
+  &__right {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: $icon-font-size-small;
+    color: $purple;
+    position: relative;
+    bottom: 0;
+    margin: 10px 0 0 10px;
+  }
+}
