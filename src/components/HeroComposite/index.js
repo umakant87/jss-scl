@@ -37,7 +37,8 @@ const HeroComposite = (props) => {
                 type="button"
                 size="medium"
                 label={cta.value.text}
-                onClick={() => readMore(cta.value.url)}
+                // onClick={() => readMore(cta.value.url)}
+                callToAction={cta.value.url}
               />
             </div>
           )}
