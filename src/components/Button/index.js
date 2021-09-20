@@ -4,7 +4,15 @@ import './index.scss';
 
 export const Button = (props) => {
   props = props?.child ? props?.props : props;
-  const { type, className, backgroundColor, size, label, callToAction, onClick } = props;
+  const type = props?.fields ? props?.fields?.Type?.value : props.type;
+  const className = props?.fields ? props?.fields?.ClassName?.value : props.className;
+  const backgroundColor = props?.fields
+    ? props?.fields?.BackgroundColor?.value
+    : props.backgroundColor;
+  const size = props?.fields ? props?.fields?.Size?.value : props.size;
+  const label = props?.fields ? props?.fields?.Label?.value : props.label;
+  const callToAction = props?.fields ? props?.fields?.CallToAction?.value : props.callToAction;
+  const onClick = props.onClick;
   const CTA = (link) => {
     window.open(link, '_blank');
   };
