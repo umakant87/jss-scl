@@ -39,7 +39,13 @@ const YoutubeVideo = (props) => {
         </div>
       )}
       {playVideo && popUp === '' && (
-        <iframe width="550" height="300" src={playVideo ? videoUrl : ''} frameBorder="1"></iframe>
+        <div className="c-video__container">
+          <iframe
+            src={playVideo ? videoUrl : ''}
+            frameBorder="1"
+            className="c-video__video"
+          ></iframe>
+        </div>
       )}
       {playVideo && popUp === 'true' && (
         <div className={[isVideoPopUpOpen, 'c-video__content_wrapper'].join(' ')}>

@@ -1,28 +1,28 @@
-@import '../../assets//common.scss';
+@import "../../assets//common.scss";
 .TileCard {
-    font-size: $font-medium;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    @media (max-width: 576px) {
-      flex-direction: column;
+  padding: $space2 0;
+  font-size: $font-medium;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+  .children {
+    padding: $space4;
+    flex-direction: column;
+    text-align: center;
+    &:hover {
+      box-shadow: 0 10px 10px $grey-light;
     }
-    .children {
-      padding: $space4;
-      flex-direction: column;
-      text-align: center;
-      &:hover {
-        box-shadow: 0 10px 10px $grey-light;
-      }
-      img {
-        width: 250px;
-        height: 250px;
-        object-fit: contain;
-      }
-      .title {
-        font-weight: 600;
-        padding-top: $space4;
-      }
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+    }
+    .title {
+      font-weight: 600;
+      padding-top: $space4;
     }
   }
-  
+}

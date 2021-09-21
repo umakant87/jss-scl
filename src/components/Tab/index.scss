@@ -1,3 +1,19 @@
 .c-tab {
     margin-bottom: 50px;
 }
+.tab-content {
+    & .active {
+          border: 1px solid #dadada;
+          border-radius: 3px;
+          border-top: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          padding: 0.5rem;
+    }
+  }
+  .nav-tabs .nav-link.active{
+      color: #495057;
+      border: 1px solid #1ea7fd !important;
+      border-bottom: 0 !important;
+      border-top: 3px solid #1ea7fd !important;
+  }

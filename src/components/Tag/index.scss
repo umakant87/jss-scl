@@ -2,7 +2,8 @@
 .c-tag {
   position: relative;
 	width: 150px;
-	display: flex;
+  display: flex;
+  padding: $space2 0;
   a {
     background: $white;
     display: inline-block;

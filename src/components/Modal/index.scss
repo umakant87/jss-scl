@@ -1,29 +1,37 @@
-@import '../../assets//common.scss';
+@import "../../assets//common.scss";
 .c-modal {
-    &__content_wrapper {
-      position: absolute;
+  padding: $space2 0;
+  &__content_wrapper {
+    position: absolute;
     //   top: 50%;
-      left: 50%;
-      right: auto;
-      bottom: auto;
-      transform: translate(-50%, -50%);
-      padding: $space2;
-      background-color: $grey-light;
-      border-radius: 5px;
-    }
-    &__title{
-        font-weight: bold;
-        padding: $space2;
-    }
-    &__content{
-        padding: $space2;
-    }
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: $space2;
+    background-color: $grey-light;
+    border-radius: 5px;
+    overflow: auto;
+    height: 200px;
   }
-  
-  .hide{
-      opacity: 0;
+  &__title {
+    font-weight: bold;
+    padding: $space2;
   }
-  .show{
-      opacity: 1;
-      transition: opacity 0.5s linear;
+  &__content {
+    padding: $space2;
   }
+  &__close{
+    float: right;
+    cursor: pointer;
+    color: $red;
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
