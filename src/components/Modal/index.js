@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Button } from '../Button/index';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 
 const Modal = (props) => {
   const title = props?.fields?.Title.value;
   const description = props?.fields?.Description.value;
+  const label = props?.fields?.Label.value;
   const [toggleModal, setToggleModal] = useState('hide');
 
   const openModal = () => {
@@ -18,19 +21,13 @@ const Modal = (props) => {
     <div className="c-modal">
       <Button
         className="secondary"
-        label="Open Modal"
+        label={label}
         size="small"
         type="button"
         onClick={() => openModal()}
       />
       <div className={[toggleModal, 'c-modal__content_wrapper'].join(' ')}>
-        <Button
-          className="close"
-          label="Close Modal"
-          size="small"
-          type="button"
-          onClick={closeModal}
-        />
+        <FontAwesomeIcon onClick={closeModal} className="c-modal__close" icon={faTimes} />
         {title !== 'undefined' && <div className="c-modal__title">{title}</div>}
         <div className="c-modal__content">{description}</div>
       </div>

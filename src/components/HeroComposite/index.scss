@@ -2,7 +2,7 @@
 
 .c-hero-composite {
     position: relative;
-    margin-top: 20px;
+    padding: $space2 0;
     &__container {
         display: flex;
         flex-direction: row;
