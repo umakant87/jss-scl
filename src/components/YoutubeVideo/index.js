@@ -9,7 +9,7 @@ const YoutubeVideo = (props) => {
   const popUp = props.fields?.Popup?.value;
   const thumbnail = props.fields?.Thumbnail?.value;
 
-  const videoUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+  const videoUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1';
 
   // Get Youtube video image from youtube, standard format
   const youtubeThumbnail = `https://i1.ytimg.com/vi/${videoId}/mqdefault.jpg`;
