@@ -4,15 +4,14 @@ import './index.scss';
 
 export const Button = (props) => {
   props = props?.child ? props?.props : props;
-  const type = props?.fields ? props?.fields?.Type?.value : props.type;
-  const className = props?.fields ? props?.fields?.ClassName?.value : props.className;
+  const type = props?.fields ? props?.fields?.type?.value : props.type;
+  const className = props?.fields ? props?.fields?.className?.value : props.className;
   const backgroundColor = props?.fields
-    ? props?.fields?.BackgroundColor?.value
+    ? props?.fields?.backgroundColor?.value
     : props.backgroundColor;
-  const size = props?.fields ? props?.fields?.Size?.value : props.size;
-  const label = props?.fields ? props?.fields?.Label?.value : props.label;
-  const callToAction = props?.fields ? props?.fields?.CallToAction?.value : props.callToAction;
-  const onClick = props.onClick;
+  const size = props?.fields ? props?.fields?.size?.value : props.size;
+  const label = props?.fields ? props?.fields?.label?.value : props.label;
+  const callToAction = props?.fields ? props?.fields?.callToAction?.value : props.callToAction;
   const CTA = (link) => {
     window.open(link, '_blank');
   };
@@ -22,7 +21,6 @@ export const Button = (props) => {
       className={['c-button', `c-button__${size}`, `c-button__${className}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...(callToAction && { onClick: () => CTA(callToAction) })}
-      onClick={onClick}
     >
       {label}
     </button>
