@@ -38,10 +38,10 @@ const fields = {
             params: {},
             fields: {
               Label: {
-                value: 'Back To Top',
+                value: 'Submit',
               },
               ClassName: {
-                value: 'test',
+                value: 'primary',
               },
               BackgroundColor: {
                 value: 'red',

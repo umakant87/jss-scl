@@ -14,10 +14,9 @@ const CountrySelector = (props) => {
   return (
     <div className="c-country">
       <div className="c-country__select">
-        <label htmlFor="Select Language">Select Language</label>
-        <select id="Select Language" onChange={handleOnChange}>
+        <label htmlFor="SelectCountry">Select Country</label>
+        <select id="SelectCountry" onChange={handleOnChange}>
           {countries.map((country, index) => {
-            console.log(country);
             return (
               <option
                 key={index}
