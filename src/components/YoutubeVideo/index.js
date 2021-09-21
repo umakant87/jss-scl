@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../Button/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 
 const YoutubeVideo = (props) => {
@@ -9,7 +9,7 @@ const YoutubeVideo = (props) => {
   const popUp = props.fields?.Popup?.value;
   const thumbnail = props.fields?.Thumbnail?.value;
 
-  const videoUrl = 'http://www.youtube.com/embed/' + videoId + '?autoplay=1';
+  const videoUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
 
   // Get Youtube video image from youtube, standard format
   const youtubeThumbnail = `https://i1.ytimg.com/vi/${videoId}/mqdefault.jpg`;
@@ -44,13 +44,7 @@ const YoutubeVideo = (props) => {
       {playVideo && popUp === 'true' && (
         <div className={[isVideoPopUpOpen, 'c-video__content_wrapper'].join(' ')}>
           <div className="c-video__content">
-            <Button
-              className="close"
-              label="Close"
-              size="small"
-              type="button"
-              onClick={closePopUp}
-            />
+            <FontAwesomeIcon onClick={closePopUp} className="c-video__close" icon={faTimes} />
             <iframe
               width="550"
               height="300"
