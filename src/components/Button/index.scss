@@ -10,11 +10,13 @@
   .c-button__primary {
     color: $white;
     background-color: $button-primary-color;
+    padding: $space2 $space3;
   }
   .c-button__secondary {
     color: #333;
     background-color: transparent;
     box-shadow: $black 0px 0px 0px 1px inset;
+    padding: $space2 $space3;
   }
   .c-button__small {
     font-size: $font-small;
