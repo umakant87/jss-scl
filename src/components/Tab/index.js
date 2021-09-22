@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, RichText } from '@sitecore-jss/sitecore-jss-react';
+import './index.scss';
 
 const Tab = (props) => {
   const tabs = props?.fields?.Tab;

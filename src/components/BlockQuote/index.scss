@@ -19,9 +19,9 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       content: "\f10d";
-      position: absolute;
-      left: 40px;
-      top: 70px;
+      position: relative;
+      left: 0;
+      bottom: 30px;
       font-size: $icon-font-size-small;
       color: $purple;
     }
