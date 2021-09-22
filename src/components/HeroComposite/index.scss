@@ -1,54 +1,74 @@
-@import '../../assets//common.scss';
+@import "../../assets//common.scss";
 
 .c-hero-composite {
-    position: relative;
-    padding: $space2 0;
-    &__container {
-        display: flex;
-        flex-direction: row;
-        @media only screen and (max-width: 900px) {
-            flex-direction: column;
-            
-        }
-        &--normal {
-            flex-direction: row;
-            @media only screen and (max-width: 900px) {
-                flex-direction: column;
-            }
-        }
-        &--reverse {
-            flex-direction: row-reverse;
-            @media only screen and (max-width: 900px) {
-                flex-direction: column-reverse;
-            }
-        }
-        
-        &__image {
-            flex-basis: 48%;
-            height: auto;
-        }
-        &__content {
-            flex-basis: 48%;
-            &__title {
-               
-                    font-weight: 600;
-            }
-            &__cta {
-                margin-top: $space4;
-            }
-        }
-        
-        
+  position: relative;
+  margin: 20px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
     }
+    &--normal {
+      flex-direction: row;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__image {
+      flex-basis: 48%;
+      height: auto;
+      img {
+        @media (max-width: 576px) {
+          vertical-align: middle;
+          border-style: none;
+          object-fit: contain;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &__content {
+      flex-basis: 48%;
+      @media (max-width: 576px) {
+        margin-top: $space4;
+      }
+      &__title {
+        font-weight: 600;
+      }
+      &__cta {
+        margin-top: $space4;
+        @media (max-width: 576px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 .c-hero-composite__container--reverse {
-    .c-hero-composite__container__content {
-        margin-right: 4%;
+  .c-hero-composite__container__content {
+    margin-right: 4%;
+    @media (max-width: 576px) {
+      margin-left: unset;
     }
+  }
 }
 
 .c-hero-composite__container--normal {
-    .c-hero-composite__container__content {
-        margin-left: 4%;
+  .c-hero-composite__container__content {
+    margin-left: 4%;
+    @media (max-width: 576px) {
+      margin-left: unset;
     }
+  }
 }
