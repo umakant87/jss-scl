@@ -2,11 +2,14 @@
 .c-backtotop {
   &__icon {
     font-size: 32px;
-    color: $black;
+    color: $white;
     position: fixed;
-    right: 1%;
+    right: 2%;
+    background-color: #000;
+    border-radius: 30%;
+    padding: 0.5rem;
     cursor: pointer;
     z-index: 1;
-    bottom: 120px;
+    bottom: 20px;
   }
 }

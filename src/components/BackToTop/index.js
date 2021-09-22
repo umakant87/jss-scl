@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 import { scrollToTop } from './BackToTop';
 
@@ -29,7 +29,7 @@ const BackToTop = (props) => {
         onClick={scrollToTop}
         style={{ display: visible ? 'inline' : 'none' }}
         className="c-backtotop__icon"
-        icon={faArrowCircleUp}
+        icon={faArrowUp}
       />
     </div>
   );
