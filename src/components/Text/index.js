@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Text = (props) => {
-  type = props?.fields?.Type.value;
-  content = props?.fields?.Text.value;
+  const type = props?.fields?.Type.value;
+  const content = props?.fields?.Text.value;
   if (type === 'h1') {
     return <h1>{content}</h1>;
   }
