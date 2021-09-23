@@ -1,58 +1,60 @@
-@import '../../assets/common.scss';
+@import "../../assets/common.scss";
 .c-enquiry {
-    margin: 2rem auto;
-    width: 500px;
-    border: 2px #eaeaea solid;
-    padding: 1rem;
-      border-radius: 5px;
-      &__topic {
-          font-weight: 400;
-          font-size: $h1-font-size-xsmall;
-          padding: $space2 0;
-      }
-      &__sub-heading{
-          font-size: $font-small;
-          padding: $space2 0;
-      }
-    & label {
-      display: inline-block;
-      margin: 0;
-    }
-    & input,
-    textarea {
-      width: 100%;
-      padding: $space2 $space2;
-      margin: 8px 0 0 0;
-          box-sizing: border-box;
-          border-radius: 5px;
-          border: 1px solid $grey-dark;
-          box-shadow: $grey-light 0px 0px 10px inset;
-    }
-    &__button {
-      margin-top: 8px;
-      padding: $space2 $space4;
-      background-color: $button-primary-color;
-      border-radius: 3px;
-      border: 0;
-      color: $white;
-      &:hover {
-        background-color: $blue-hover;
-      }
-    }
-    &__error {
-      color: $red;
-      font-size: $font-small;
-    }
-    &__success {
-      padding: $space2 $space4;
-      font-size: $font-small;
-      font-weight: 400;
-      text-align: center;
-      margin: 0.5rem 0;
-      color: $black;
-      border-radius: 5px;
-      border: 1px solid $success;
-      font-weight: bold;
-    }   
+  margin: 2rem auto;
+  width: 500px;
+  border: 2px #eaeaea solid;
+  padding: 1rem;
+  border-radius: 5px;
+  @media (max-width: 900px) {
+    width: 100%;
   }
-  
+  &__topic {
+    font-weight: 400;
+    font-size: $h1-font-size-xsmall;
+    padding: $space2 0;
+  }
+  &__sub-heading {
+    font-size: $font-small;
+    padding: $space2 0;
+  }
+  & label {
+    display: inline-block;
+    margin: 0;
+  }
+  & input,
+  textarea {
+    width: 100%;
+    padding: $space2 $space2;
+    margin: 8px 0 0 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid $grey-dark;
+    box-shadow: $grey-light 0px 0px 10px inset;
+  }
+  &__button {
+    margin-top: 8px;
+    padding: $space2 $space4;
+    background-color: $button-primary-color;
+    border-radius: 3px;
+    border: 0;
+    color: $white;
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+  &__error {
+    color: $red;
+    font-size: $font-small;
+  }
+  &__success {
+    padding: $space2 $space4;
+    font-size: $font-small;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5rem 0;
+    color: $black;
+    border-radius: 5px;
+    border: 1px solid $success;
+    font-weight: bold;
+  }
+}
