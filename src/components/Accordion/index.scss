@@ -1,9 +1,11 @@
 @import '../../assets/common.scss';
+.c-accordion-wrapper{
+  padding: $space2 0;
+}
 .c-accordion {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  padding: $space2 0;
   &__item {
     &__title {
       display: flex;

@@ -6,7 +6,7 @@ const HeroBanner = (props) => {
   const heroImage = props?.fields?.Image;
   const title = props?.fields?.Title;
   const description = props?.fields?.Description;
-  const orientation = props?.fields?.Orientation?.value;
+  const orientation = props?.fields?.Orientation?.fields?.Name?.value;
   return (
     <div className="c-hero-banner">
       <div className="c-hero-banner__container">
