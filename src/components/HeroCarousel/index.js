@@ -7,7 +7,7 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 const HeroCarousel = (props) => {
   const slides = props?.fields?.Slides;
   const showCaption = props?.fields?.showCaption?.value;
-  const captionAlignment = props?.fields?.cationAlignment?.fields?.Name?.value;
+  const captionAlignment = props?.fields?.captionAlignment?.fields?.Name?.value;
 
   const [currSlide, setCurrSlide] = useState(1);
   /**

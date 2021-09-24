@@ -9,9 +9,6 @@ const Header = (props) => {
   const brand = props?.fields?.Logo;
   const links = props?.fields?.Links;
   const theme = props?.fields.Theme?.fields?.Name?.value;
-
-  console.log(props.fields);
-
   return (
     <header className={'c-header'}>
       <nav className={['navbar navbar-expand-lg navbar-dark', `${theme}`].join(' ')}>
@@ -41,8 +38,9 @@ const Header = (props) => {
                     <Link
                       modifiers={index === 0 ? 'nav-link active' : 'nav-link'}
                       label={val.displayName}
-                      path={val.url}
+                      path={val?.fields?.Link?.value?.href}
                       titleLabel={val.displayName}
+                      target={val?.fields?.Link?.value?.target}
                     >
                       {val.displayName}
                     </Link>

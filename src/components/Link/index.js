@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Link = ({ children, path, isExternal, titleLabel, modifiers }) => {
+const Link = ({ children, path, isExternal, titleLabel, modifiers, target }) => {
   return (
     <a
       href={path}
@@ -9,6 +9,7 @@ const Link = ({ children, path, isExternal, titleLabel, modifiers }) => {
       role="link"
       title={titleLabel}
       rel={isExternal ? 'rel=noreferrer' : ''}
+      target={target}
     >
       {children}
     </a>
