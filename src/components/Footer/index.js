@@ -31,8 +31,9 @@ const Footer = (props) => {
                     <Link
                       isExternal
                       label={link.displayName}
-                      path={link.url}
+                      path={link.fields?.Link?.value?.href}
                       titleLabel={link.displayName}
+                      target={link?.fields?.Link?.value?.target}
                     >
                       {link.displayName}
                     </Link>

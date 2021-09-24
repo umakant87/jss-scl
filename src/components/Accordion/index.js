@@ -30,7 +30,7 @@ const AccordionItem = ({ title, content, accoption }) => {
 };
 
 const Accordion = (props) => {
-  const accoridons = props.fields?.AccordionItems;
+  const accordions = props.fields?.AccordionItems;
   const accOption = props.fields?.AccOption?.value;
 
   return (
@@ -39,9 +39,9 @@ const Accordion = (props) => {
         return (
           <AccordionItem
             key={index}
-            title={accordion.title}
-            accoption={accOption}
-            content={accordion.content}
+            title={accordion?.fields?.Title?.value}
+            content={accordion?.fields?.Content?.value}
+            accoption={accOption}            
           />
         );
       })}
