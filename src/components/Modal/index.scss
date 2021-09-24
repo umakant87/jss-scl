@@ -1,5 +1,6 @@
 @import "../../assets//common.scss";
 .c-modal {
+  display: flex;
   padding: $space2 0;
   &__content_wrapper {
     position: absolute;
@@ -34,4 +35,17 @@
 .show {
   opacity: 1;
   transition: opacity 0.5s linear;
+}
+.left{
+  justify-content: flex-start !important;
+}
+.right{
+  justify-content: flex-end !important;
+}
+.center{
+  justify-content: center !important;
+}
+.c-button{
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgb(63, 120, 243);
 }

@@ -5,9 +5,11 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 
 const Modal = (props) => {
-  const title = props?.fields?.Title.value;
-  const description = props?.fields?.Description.value;
-  const label = props?.fields?.Label.value;
+  const title = props?.fields?.Title?.value;
+  const description = props?.fields?.Description?.value;
+  const label = props?.fields?.Label?.value;
+  const position = props?.fields?.Position?.displayName;
+
   const [toggleModal, setToggleModal] = useState('hide');
 
   const openModal = () => {
@@ -18,9 +20,9 @@ const Modal = (props) => {
   };
 
   return (
-    <div className="c-modal">
+    <div className={[position, 'c-modal'].join(' ')}>
       <Button
-        className="secondary"
+        className="primary"
         label={label}
         size="small"
         type="button"

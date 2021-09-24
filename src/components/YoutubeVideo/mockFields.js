@@ -41,10 +41,7 @@ const fields = {
                 value: 'aqz-KE-bpKQ',
               },
               Popup: {
-                value: 'true',
-              },
-              Thumbnail: {
-                value: '',
+                value: true,
               },
               Theme: {
                 id: '9a3425fe-ee12-4d3b-8ab3-70d70812bf04',

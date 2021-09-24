@@ -7,7 +7,6 @@ import './index.scss';
 const YoutubeVideo = (props) => {
   const videoId = props.fields?.VideoId?.value;
   const popUp = props.fields?.Popup?.value;
-  const thumbnail = props.fields?.Thumbnail?.value;
 
   const videoUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1';
 
@@ -22,7 +21,7 @@ const YoutubeVideo = (props) => {
   };
   const handleVideoPlay = () => {
     setPlayVideo(true);
-    if (popUp === 'true') {
+    if (popUp === true) {
       setVideoPopUp('show');
     }
   };
@@ -32,13 +31,13 @@ const YoutubeVideo = (props) => {
         <div>
           <img
             className="c-video__thumbnail"
-            src={youtubeThumbnail ? youtubeThumbnail : thumbnail}
+            src={youtubeThumbnail ? youtubeThumbnail : ''}
             alt="Thumbnail"
           />
           <FontAwesomeIcon onClick={handleVideoPlay} className="c-video__playicon" icon={faPlay} />
         </div>
       )}
-      {playVideo && popUp === '' && (
+      {playVideo && popUp === false && (
         <div className="c-video__container">
           <iframe
             src={playVideo ? videoUrl : ''}
@@ -47,7 +46,7 @@ const YoutubeVideo = (props) => {
           ></iframe>
         </div>
       )}
-      {playVideo && popUp === 'true' && (
+      {playVideo && popUp === true && (
         <div className={[isVideoPopUpOpen, 'c-video__content_wrapper'].join(' ')}>
           <div className="c-video__content">
             <FontAwesomeIcon onClick={closePopUp} className="c-video__close" icon={faTimes} />

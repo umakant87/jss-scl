@@ -8,7 +8,7 @@ const PageHeader = (props) => {
   return (
     <div className="c-page-header" style={{ backgroundColor: backgroundColor }}>
       <div className="c-page-header__title">
-        <Text tag="p" field={headerText} />
+        <Text tag="h2" field={headerText} />
       </div>
     </div>
   );
