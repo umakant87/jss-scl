@@ -43,6 +43,19 @@ const fields = {
               Content: {
                 value: 'Are you sure that you want to permanently delete this item?',
               },
+              AccordionItems: [
+                {
+                  title: 'Title 1',
+                  content: 'Content 1',
+                },
+                {
+                  title: 'Title 2',
+                  content: 'Content 2',
+                },
+              ],
+              AccOption: {
+                value: 'Collapse',
+              },
               Theme: {
                 id: '9a3425fe-ee12-4d3b-8ab3-70d70812bf04',
                 url: '/Data/Shared/Themes/bg-dark',

@@ -8,7 +8,7 @@ const HeroComposite = (props) => {
   const title = props?.fields?.Title;
   const description = props?.fields?.Description;
   const cta = props?.fields?.Cta;
-  const orientation = props?.fields?.Orientation?.value;
+  const orientation = props?.fields?.Orientation?.fields?.Name?.value;
   const readMore = (link) => {
     window.open(link, '_blank');
   };

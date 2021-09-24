@@ -8,7 +8,7 @@ const Header = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const brand = props?.fields?.Logo;
   const links = props?.fields?.Links;
-  const theme = props?.fields.Theme?.name;
+  const theme = props?.fields.Theme?.fields?.Name?.value;
 
   console.log(props.fields);
 
