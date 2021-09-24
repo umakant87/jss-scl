@@ -65,6 +65,10 @@ placeholders:
             Name:
               value: bg-dark
 
+    - componentName: HeroCarousel
+      fields:
+        heading: Welcome to Sitecore JSS
+
     - componentName: HeroBanner
       fields:
         heading: Welcome to Sitecore JSS
