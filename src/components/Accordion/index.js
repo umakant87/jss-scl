@@ -41,7 +41,7 @@ const Accordion = (props) => {
             key={index}
             title={accordion?.fields?.Title?.value}
             content={accordion?.fields?.Content?.value}
-            accoption={accOption}            
+            accoption={accOption}
           />
         );
       })}
