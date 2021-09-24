@@ -30,6 +30,7 @@ const BackToTop = (props) => {
         style={{ display: visible ? 'inline' : 'none' }}
         className="c-backtotop__icon"
         icon={faArrowUp}
+        title={srLabelText}
       />
     </div>
   );

@@ -10,14 +10,16 @@
       flex-direction: row;
       justify-content: space-between;
       cursor: pointer;
-      background-color: $blue;
+      background-color: hsla(0,13%,91%,.842);
       padding: $space3;
+      font-size: 20px;
+      font-weight: 500;
       &:hover {
-        background-color: $blue-hover;
+        background-color: hsla(0,13%,91%,.842)-hover;
       }
     }
     &__content {
-      background-color: $blue;
+      background-color: #cececf;
       padding: $space3;
     }
   }
