@@ -1,5 +1,8 @@
 @import "../../assets//common.scss";
 .c-header {
+  a[target='_blank']:after {
+		content: '' !important;
+	}
   &__container-fluid {
     &__navbar-brand {
       width: 100px;

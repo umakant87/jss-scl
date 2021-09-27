@@ -1,9 +1,10 @@
 @import "../../assets//common.scss";
 .TileCard {
   font-size: $font-medium;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
+  width: 100%;
   @media (max-width: 576px) {
     flex-direction: column;
   }
@@ -15,8 +16,8 @@
       box-shadow: 0 10px 10px $grey-light;
     }
     img {
-      width: 100%;
-      height: auto;
+      max-width:100% !important;
+      height:auto !important;
       object-fit: contain;
     }
     .title {
