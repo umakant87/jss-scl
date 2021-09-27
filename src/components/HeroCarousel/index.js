@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import { Image } from '@sitecore-jss/sitecore-jss-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -33,6 +33,17 @@ const HeroCarousel = (props) => {
     currSlide === slides.length ? (cnt += 1) : (cnt += currSlide + 1);
     currentSlide(cnt);
   };
+
+  /**
+   * Method to handle auto slide with delay
+   */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
+
   return (
     <div className={'c-slidecontainer'}>
       <div className={'c-slidecontainer__slider'}>
