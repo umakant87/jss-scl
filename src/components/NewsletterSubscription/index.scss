@@ -36,10 +36,6 @@
       background-color: $blue-hover;
     }
   }
-  &__error {
-    color: $red;
-    font-size: $font-small;
-  }
   &__success {
     padding: $space2 $space4;
     font-size: $font-small;
@@ -51,4 +47,8 @@
     border: 1px solid $success;
     font-weight: bold;
   }
+}
+.invalid {
+  color: $red;
+  font-size: $font-small;
 }
